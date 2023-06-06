@@ -48,7 +48,8 @@ void poly2(){
 	hist->Draw();
 
 	// Fit poly2
-	TF1 *myfitpoly2 = new TF1("poly2 fit", "pol2", range_i, range_f);
+	TF1 *myfitpoly2 = new TF1("poly2 fit", "[0]+[1]*x*x", range_i, range_f);
+	myfitpoly2->SetParameters(hist->GetEntries());
 	myfitpoly2->SetLineColor(kRed);
 	hist->Fit(myfitpoly2, "R", "same");
 	
