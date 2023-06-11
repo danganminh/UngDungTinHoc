@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = -100 -100 -100
+CenterOfRotation = 0 0 0
+ElementSpacing = 10 10 10
+DimSize = 21 21 21
+AnatomicalOrientation = ???
+ElementType = MET_FLOAT
+ElementDataFile = run02-Dose-Uncertainty.raw
